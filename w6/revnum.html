@@ -1,0 +1,12 @@
+
+<h2>JavaScript reverse using Arrow Function</h2>
+<p id="demo1"></p>
+<script>
+    var number = 1223456;
+    let reversedNum = 0;
+    reversedNum = () => {
+        return (Number(String(number).split('').reverse().join('')));
+    }
+
+    document.getElementById("demo1").innerHTML = reversedNum();
+</script>
