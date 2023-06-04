@@ -1,0 +1,67 @@
+
+<html>
+<body>
+<h1>HTML Events</h1>
+
+<h2>ONKEYDOWN</h2>
+<p>Press a key in the input field:</p>
+<input type="text" onkeydown="keyFunction()">
+<p id="demo1"></p>
+<script>
+function keyFunction() {
+  document.getElementById("demo1").innerHTML = "You pressed a key inside the input field";
+}
+</script>
+<br><br>
+
+<h2>ONCHANGE</h2>
+<p>Select a new car from the list.</p>
+<select id="mySelect" onchange="chngFunction()">
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option>
+</select>
+<p>On selection, a function is triggered which outputs the value of the selected car.</p>
+<p id="demo2"></p>
+<script>
+function chngFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo2").innerHTML = "You selected: " + x;
+}
+</script>
+<br><br>
+
+<h2>ONCLICK</h2>
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+<button onclick="clkFunction()">Click me</button>
+<p id="demo3"></p>
+<script>
+function clkFunction() {
+  document.getElementById("demo3").innerHTML = "Hello World";
+}
+</script>
+<br><br>
+
+<h2>ONMOUSEOVER</h2>
+<p>hover to trigger alert</p>
+<p onmouseover = "mouseOver()">here!!!</p>
+<script>
+function mouseOver(){
+    alert("Mouse over works")
+}
+</script>
+<br><br>
+
+<h2>ONMOUSEOUT</h2>
+<p>hover and leave to trigger alert</p>
+<p onmouseout = "mouseOut()">Over here!!!</p>
+<script>
+function mouseOut(){
+    alert("Mouse out works")
+}
+</script>
+
+</body>
+</html>
