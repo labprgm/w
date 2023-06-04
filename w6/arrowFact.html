@@ -1,0 +1,22 @@
+
+<h2>JavaScript reverse using Arrow Functions</h2>
+<p id="demo1"></p>
+<script>
+    const number = parseInt(prompt('Enter a positive integer: '));
+    if (number < 0) {
+        document.write('Error! Factorial for negative number does not exist.');
+        window.close();
+    } else if (number === 0) {
+        document.write(`The factorial of ${number} is 1.`);
+        window.close();
+    }
+    reversedNum = () => {
+        let fact = 1;
+        for (i = 1; i <= number; i++) {
+            fact *= i;
+        }
+        return (fact)
+    }
+
+    document.getElementById("demo1").innerHTML = reversedNum();
+</script>
