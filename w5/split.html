@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <h2>Split Array</h2>
+    <body><p id="demo1"></p>
+<script>
+    const a = [10, 5, 8, 2, 9, 7, 1];
+    var b=[];
+    var c=[];
+    //const b = [10, 5, 8, 2, 9, 7, 2];
+    document.getElementById("demo1").innerHTML = a;
+    //document.getElementById("demo2").innerHTML = b;
+    const length = 7;
+    var pos=parseInt(prompt("Enter index from where array has to be split "))
+    console.log(length)
+
+    for (var i = 0; i < pos; i++) {
+        b[i]=a[i];
+    }
+    var k=0;
+    for (var j = pos; j < length; j++) {
+        c[k]=a[j];
+        k++;
+    }
+        document.write(b+"<br>");
+        document.write(c+"<br>");
+    console.log(a);
+</script>
+
+</body>
+
+</html>
