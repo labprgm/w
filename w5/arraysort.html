@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+        <title><b>ARRAY SORT</b></title>
+        <style type="text/css">
+        body {
+          color: rgb(29, 16, 145);
+          background-color: #e0abb3;
+        align-items: center; }
+        </style>
+      </head>
+      <body>
+        <h2>Array Sort</h2>
+        <script>
+        let arr = [4, 32, 2, 5, 8];
+document.write("Unsorted array=>"+"<br>"+arr+"<br>");
+for (let i = 0; i < arr.length; i++) {
+  for (let j = i + 1; j < arr.length; j++) {
+    if (arr[i] > arr[j]) {
+      temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+  }
+}
+document.write("Sorted array=>"+ "<br>"+arr);
+            </script>
+    </body>
+</html>
